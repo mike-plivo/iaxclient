@@ -1,0 +1,13 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=${prefix}/include
+
+Name: iaxclient
+Description: Inter-Asterisk eXchange Client Library
+Version: @PACKAGE_VERSION@
+Libs: -L${libdir} -liaxclient @PTHREAD_LIBS@
+Libs.private: @GSM_LIBS@
+Cflags: -I${includedir}
+Requires.private: portaudio-2.0 speex @PKG_REQUIRES@
+

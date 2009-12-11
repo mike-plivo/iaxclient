@@ -1,0 +1,24 @@
+/*! \mainpage
+
+<A href="http://iaxclient.sourceforge.net/">IAXClient</A> is an Open Source library to implement the IAX protocol used by 
+<A href="http://www.asterisk.org/">The Asterisk Software PBX</A> and is licensed under the the LGPL \ref License.<BR>
+
+Although asterisk supports other VOIP protocols (including SIP, and with patches, H.323), IAX's simple, lightweight nature gives it several advantages, particularly in that it can operate easily through NAT and packet firewalls, and it is easily extensible and simple to understand.
+
+See the <A href="http://iaxclient.sourceforge.net/">IAXClient</A> website for futher 
+information at <A href="http://iaxclient.sf.net">http://iaxclient.sf.net</A>
+
+Things you may be interested include:
+<UL>
+<LI>The IAXClient API, as documented in iaxclient.h</LI>
+<LI><a href="http://iaxclient.sourceforge.net/devinfo.html">Some developer information</A></LI>
+<LI><a href="http://sourceforge.net/projects/iaxclient/">SourceForge
+Development Site</A></LI>
+<LI><a href="http://lists.sourceforge.net/lists/listinfo/iaxclient-devel">Subscribe to the mailing list</A> iaxclient-devel@lists.sourceforge.net!</LI>
+<LI><a href="http://iaxclient.sourceforge.net/IAXClientFAQ.html">FAQ</A></LI>
+<LI>You can also catch some of the developers online at the <A href="http://www.freenode.net">freenode</A> IRC channels
+<A href="irc://irc.freenode.net/iaxclient">\#iaxclient</A> or <A href="irc://irc.freenode.net/asterisk">\#asterisk</A></LI>
+</UL>
+
+*/
+

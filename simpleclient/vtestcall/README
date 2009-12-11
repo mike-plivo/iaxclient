@@ -1,0 +1,24 @@
+Use the following command line:
+
+vtestcall -F <codec> <framerate> <bps> <width> <height> <fragment size>
+[destination]
+
+See iaxclient/lib/iaxclient.h for codec types.
+Theora is 24
+H.264 is 21
+
+Example:
+
+Theora stream, 15 fps, 200kbps, 320x240
+vtestcall -F 24 15 200000 320 240 1400
+
+If destination is missing, vtestcall will wait for incoming calls.
+
+The fragment size parameter is now working.  However, Asterisk seems to have 
+problems with frames bigger than 4K so don't go over that.  
+
+Right now, you need all parameters, mainly because command line parsing in 
+vtestcall sucks and I am too lazy to fix it. If it bothers you, fix it
+yourself and post a patch.
+
+

@@ -1,0 +1,11 @@
+Source: iaxclient
+Section: libs
+Priority: optional
+Maintainer: Michael Ricordeau <m.ricordeau@newtech.fr>
+Standards-Version: 3.6.1
+
+Package: iaxclient2
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: IaxClient lib.

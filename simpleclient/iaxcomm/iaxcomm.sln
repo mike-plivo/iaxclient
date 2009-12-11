@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iaxcomm", "iaxcomm.vcproj", "{3856417E-2A25-4094-A7E2-38AE64719ECA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_dll|Win32 = Debug_dll|Win32
+		Debug_novideo_dll|Win32 = Debug_novideo_dll|Win32
+		Debug_novideo|Win32 = Debug_novideo|Win32
+		Debug|Win32 = Debug|Win32
+		Release_dll|Win32 = Release_dll|Win32
+		Release_novideo_dll|Win32 = Release_novideo_dll|Win32
+		Release_novideo|Win32 = Release_novideo|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3856417E-2A25-4094-A7E2-38AE64719ECA}.Debug_dll|Win32.ActiveCfg = Debug_dll|Win32
+		{3856417E-2A25-4094-A7E2-38AE64719ECA}.Debug_dll|Win32.Build.0 = Debug_dll|Win32
+		{3856417E-2A25-4094-A7E2-38AE64719ECA}.Debug_novideo_dll|Win32.ActiveCfg = Debug_novideo_dll|Win32
+		{3856417E-2A25-4094-A7E2-38AE64719ECA}.Debug_novideo_dll|Win32.Build.0 = Debug_novideo_dll|Win32
+		{3856417E-2A25-4094-A7E2-38AE64719ECA}.Debug_novideo|Win32.ActiveCfg = Debug_novideo|Win32
+		{3856417E-2A25-4094-A7E2-38AE64719ECA}.Debug_novideo|Win32.Build.0 = Debug_novideo|Win32
+		{3856417E-2A25-4094-A7E2-38AE64719ECA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3856417E-2A25-4094-A7E2-38AE64719ECA}.Debug|Win32.Build.0 = Debug|Win32
+		{3856417E-2A25-4094-A7E2-38AE64719ECA}.Release_dll|Win32.ActiveCfg = Release_dll|Win32
+		{3856417E-2A25-4094-A7E2-38AE64719ECA}.Release_dll|Win32.Build.0 = Release_dll|Win32
+		{3856417E-2A25-4094-A7E2-38AE64719ECA}.Release_novideo_dll|Win32.ActiveCfg = Release_novideo_dll|Win32
+		{3856417E-2A25-4094-A7E2-38AE64719ECA}.Release_novideo_dll|Win32.Build.0 = Release_novideo_dll|Win32
+		{3856417E-2A25-4094-A7E2-38AE64719ECA}.Release_novideo|Win32.ActiveCfg = Release_novideo|Win32
+		{3856417E-2A25-4094-A7E2-38AE64719ECA}.Release_novideo|Win32.Build.0 = Release_novideo|Win32
+		{3856417E-2A25-4094-A7E2-38AE64719ECA}.Release|Win32.ActiveCfg = Release|Win32
+		{3856417E-2A25-4094-A7E2-38AE64719ECA}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

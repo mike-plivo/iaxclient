@@ -1,0 +1,14 @@
+/*! \page License
+
+		The IAXClient is licensed under the GNU Lesser General Public License
+
+		Copyrights:
+		- Copyright &copy; 2003-2006, Horizon Wimba, Inc.
+		- Copyright &copy; 2007, Wimba, Inc.
+
+		IAXClient Contributors:
+		\verbinclude AUTHORS
+
+		License:
+		\verbinclude COPYING.LIB
+*/

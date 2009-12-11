@@ -1,0 +1,220 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libportmixer", "libportmixer.vcproj", "{3A76129B-55AB-4D54-BAA7-08F63ED52569}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libportaudio", "libportaudio.vcproj", "{3B023516-2C69-4CCB-9302-239991B6EC2C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libiaxclient", "libiaxclient.vcproj", "{9A9C003E-EAF6-4D0E-896F-E3994503C7E4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5CC054B7-6DAA-46BF-9A08-3B33B83E8D3E} = {5CC054B7-6DAA-46BF-9A08-3B33B83E8D3E}
+		{3A76129B-55AB-4D54-BAA7-08F63ED52569} = {3A76129B-55AB-4D54-BAA7-08F63ED52569}
+		{82C9BD79-9796-405F-8A28-3F538514AC3A} = {82C9BD79-9796-405F-8A28-3F538514AC3A}
+		{E2C6AD95-7A61-41FE-8754-A4623C891BF8} = {E2C6AD95-7A61-41FE-8754-A4623C891BF8}
+		{F5166D99-32BB-40D5-BE95-6F97F72C44CE} = {F5166D99-32BB-40D5-BE95-6F97F72C44CE}
+		{E972C52F-9E85-4D65-B19C-031E511E9DB4} = {E972C52F-9E85-4D65-B19C-031E511E9DB4}
+		{3B023516-2C69-4CCB-9302-239991B6EC2C} = {3B023516-2C69-4CCB-9302-239991B6EC2C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libiax2", "libiax2.vcproj", "{5CC054B7-6DAA-46BF-9A08-3B33B83E8D3E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libgsm", "libgsm.vcproj", "{82C9BD79-9796-405F-8A28-3F538514AC3A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libogg", "libogg.vcproj", "{2F463562-375D-481E-A6E0-7C7D0DC1ED7A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libspeex", "libspeex.vcproj", "{E972C52F-9E85-4D65-B19C-031E511E9DB4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libtheora", "libtheora.vcproj", "{E2C6AD95-7A61-41FE-8754-A4623C891BF8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2F463562-375D-481E-A6E0-7C7D0DC1ED7A} = {2F463562-375D-481E-A6E0-7C7D0DC1ED7A}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testcall", "testcall.vcproj", "{6F5AEE93-BA87-465B-BC75-C41C434FC4E4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9A9C003E-EAF6-4D0E-896F-E3994503C7E4} = {9A9C003E-EAF6-4D0E-896F-E3994503C7E4}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vtestcall", "vtestcall.vcproj", "{B5F8E725-85A8-4CB1-8824-B82127BB2B1E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9A9C003E-EAF6-4D0E-896F-E3994503C7E4} = {9A9C003E-EAF6-4D0E-896F-E3994503C7E4}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libvidcap", "libvidcap.vcproj", "{F5166D99-32BB-40D5-BE95-6F97F72C44CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_dll|Win32 = Debug_dll|Win32
+		Debug_novideo_dll|Win32 = Debug_novideo_dll|Win32
+		Debug_novideo|Win32 = Debug_novideo|Win32
+		Debug|Win32 = Debug|Win32
+		Release_dll|Win32 = Release_dll|Win32
+		Release_novideo_dll|Win32 = Release_novideo_dll|Win32
+		Release_novideo|Win32 = Release_novideo|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A76129B-55AB-4D54-BAA7-08F63ED52569}.Debug_dll|Win32.ActiveCfg = Debug|Win32
+		{3A76129B-55AB-4D54-BAA7-08F63ED52569}.Debug_dll|Win32.Build.0 = Debug|Win32
+		{3A76129B-55AB-4D54-BAA7-08F63ED52569}.Debug_novideo_dll|Win32.ActiveCfg = Debug|Win32
+		{3A76129B-55AB-4D54-BAA7-08F63ED52569}.Debug_novideo_dll|Win32.Build.0 = Debug|Win32
+		{3A76129B-55AB-4D54-BAA7-08F63ED52569}.Debug_novideo|Win32.ActiveCfg = Debug|Win32
+		{3A76129B-55AB-4D54-BAA7-08F63ED52569}.Debug_novideo|Win32.Build.0 = Debug|Win32
+		{3A76129B-55AB-4D54-BAA7-08F63ED52569}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3A76129B-55AB-4D54-BAA7-08F63ED52569}.Debug|Win32.Build.0 = Debug|Win32
+		{3A76129B-55AB-4D54-BAA7-08F63ED52569}.Release_dll|Win32.ActiveCfg = Release|Win32
+		{3A76129B-55AB-4D54-BAA7-08F63ED52569}.Release_dll|Win32.Build.0 = Release|Win32
+		{3A76129B-55AB-4D54-BAA7-08F63ED52569}.Release_novideo_dll|Win32.ActiveCfg = Release|Win32
+		{3A76129B-55AB-4D54-BAA7-08F63ED52569}.Release_novideo_dll|Win32.Build.0 = Release|Win32
+		{3A76129B-55AB-4D54-BAA7-08F63ED52569}.Release_novideo|Win32.ActiveCfg = Release|Win32
+		{3A76129B-55AB-4D54-BAA7-08F63ED52569}.Release_novideo|Win32.Build.0 = Release|Win32
+		{3A76129B-55AB-4D54-BAA7-08F63ED52569}.Release|Win32.ActiveCfg = Release|Win32
+		{3A76129B-55AB-4D54-BAA7-08F63ED52569}.Release|Win32.Build.0 = Release|Win32
+		{3B023516-2C69-4CCB-9302-239991B6EC2C}.Debug_dll|Win32.ActiveCfg = Debug|Win32
+		{3B023516-2C69-4CCB-9302-239991B6EC2C}.Debug_dll|Win32.Build.0 = Debug|Win32
+		{3B023516-2C69-4CCB-9302-239991B6EC2C}.Debug_novideo_dll|Win32.ActiveCfg = Debug|Win32
+		{3B023516-2C69-4CCB-9302-239991B6EC2C}.Debug_novideo_dll|Win32.Build.0 = Debug|Win32
+		{3B023516-2C69-4CCB-9302-239991B6EC2C}.Debug_novideo|Win32.ActiveCfg = Debug|Win32
+		{3B023516-2C69-4CCB-9302-239991B6EC2C}.Debug_novideo|Win32.Build.0 = Debug|Win32
+		{3B023516-2C69-4CCB-9302-239991B6EC2C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3B023516-2C69-4CCB-9302-239991B6EC2C}.Debug|Win32.Build.0 = Debug|Win32
+		{3B023516-2C69-4CCB-9302-239991B6EC2C}.Release_dll|Win32.ActiveCfg = Release|Win32
+		{3B023516-2C69-4CCB-9302-239991B6EC2C}.Release_dll|Win32.Build.0 = Release|Win32
+		{3B023516-2C69-4CCB-9302-239991B6EC2C}.Release_novideo_dll|Win32.ActiveCfg = Release|Win32
+		{3B023516-2C69-4CCB-9302-239991B6EC2C}.Release_novideo_dll|Win32.Build.0 = Release|Win32
+		{3B023516-2C69-4CCB-9302-239991B6EC2C}.Release_novideo|Win32.ActiveCfg = Release|Win32
+		{3B023516-2C69-4CCB-9302-239991B6EC2C}.Release_novideo|Win32.Build.0 = Release|Win32
+		{3B023516-2C69-4CCB-9302-239991B6EC2C}.Release|Win32.ActiveCfg = Release|Win32
+		{3B023516-2C69-4CCB-9302-239991B6EC2C}.Release|Win32.Build.0 = Release|Win32
+		{9A9C003E-EAF6-4D0E-896F-E3994503C7E4}.Debug_dll|Win32.ActiveCfg = Debug_dll|Win32
+		{9A9C003E-EAF6-4D0E-896F-E3994503C7E4}.Debug_dll|Win32.Build.0 = Debug_dll|Win32
+		{9A9C003E-EAF6-4D0E-896F-E3994503C7E4}.Debug_novideo_dll|Win32.ActiveCfg = Debug_novideo_dll|Win32
+		{9A9C003E-EAF6-4D0E-896F-E3994503C7E4}.Debug_novideo_dll|Win32.Build.0 = Debug_novideo_dll|Win32
+		{9A9C003E-EAF6-4D0E-896F-E3994503C7E4}.Debug_novideo|Win32.ActiveCfg = Debug_novideo|Win32
+		{9A9C003E-EAF6-4D0E-896F-E3994503C7E4}.Debug_novideo|Win32.Build.0 = Debug_novideo|Win32
+		{9A9C003E-EAF6-4D0E-896F-E3994503C7E4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9A9C003E-EAF6-4D0E-896F-E3994503C7E4}.Debug|Win32.Build.0 = Debug|Win32
+		{9A9C003E-EAF6-4D0E-896F-E3994503C7E4}.Release_dll|Win32.ActiveCfg = Release_dll|Win32
+		{9A9C003E-EAF6-4D0E-896F-E3994503C7E4}.Release_dll|Win32.Build.0 = Release_dll|Win32
+		{9A9C003E-EAF6-4D0E-896F-E3994503C7E4}.Release_novideo_dll|Win32.ActiveCfg = Release_novideo_dll|Win32
+		{9A9C003E-EAF6-4D0E-896F-E3994503C7E4}.Release_novideo_dll|Win32.Build.0 = Release_novideo_dll|Win32
+		{9A9C003E-EAF6-4D0E-896F-E3994503C7E4}.Release_novideo|Win32.ActiveCfg = Release_novideo|Win32
+		{9A9C003E-EAF6-4D0E-896F-E3994503C7E4}.Release_novideo|Win32.Build.0 = Release_novideo|Win32
+		{9A9C003E-EAF6-4D0E-896F-E3994503C7E4}.Release|Win32.ActiveCfg = Release|Win32
+		{9A9C003E-EAF6-4D0E-896F-E3994503C7E4}.Release|Win32.Build.0 = Release|Win32
+		{5CC054B7-6DAA-46BF-9A08-3B33B83E8D3E}.Debug_dll|Win32.ActiveCfg = Debug|Win32
+		{5CC054B7-6DAA-46BF-9A08-3B33B83E8D3E}.Debug_dll|Win32.Build.0 = Debug|Win32
+		{5CC054B7-6DAA-46BF-9A08-3B33B83E8D3E}.Debug_novideo_dll|Win32.ActiveCfg = Debug|Win32
+		{5CC054B7-6DAA-46BF-9A08-3B33B83E8D3E}.Debug_novideo_dll|Win32.Build.0 = Debug|Win32
+		{5CC054B7-6DAA-46BF-9A08-3B33B83E8D3E}.Debug_novideo|Win32.ActiveCfg = Debug|Win32
+		{5CC054B7-6DAA-46BF-9A08-3B33B83E8D3E}.Debug_novideo|Win32.Build.0 = Debug|Win32
+		{5CC054B7-6DAA-46BF-9A08-3B33B83E8D3E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5CC054B7-6DAA-46BF-9A08-3B33B83E8D3E}.Debug|Win32.Build.0 = Debug|Win32
+		{5CC054B7-6DAA-46BF-9A08-3B33B83E8D3E}.Release_dll|Win32.ActiveCfg = Release|Win32
+		{5CC054B7-6DAA-46BF-9A08-3B33B83E8D3E}.Release_dll|Win32.Build.0 = Release|Win32
+		{5CC054B7-6DAA-46BF-9A08-3B33B83E8D3E}.Release_novideo_dll|Win32.ActiveCfg = Release|Win32
+		{5CC054B7-6DAA-46BF-9A08-3B33B83E8D3E}.Release_novideo_dll|Win32.Build.0 = Release|Win32
+		{5CC054B7-6DAA-46BF-9A08-3B33B83E8D3E}.Release_novideo|Win32.ActiveCfg = Release|Win32
+		{5CC054B7-6DAA-46BF-9A08-3B33B83E8D3E}.Release_novideo|Win32.Build.0 = Release|Win32
+		{5CC054B7-6DAA-46BF-9A08-3B33B83E8D3E}.Release|Win32.ActiveCfg = Release|Win32
+		{5CC054B7-6DAA-46BF-9A08-3B33B83E8D3E}.Release|Win32.Build.0 = Release|Win32
+		{82C9BD79-9796-405F-8A28-3F538514AC3A}.Debug_dll|Win32.ActiveCfg = Debug|Win32
+		{82C9BD79-9796-405F-8A28-3F538514AC3A}.Debug_dll|Win32.Build.0 = Debug|Win32
+		{82C9BD79-9796-405F-8A28-3F538514AC3A}.Debug_novideo_dll|Win32.ActiveCfg = Debug|Win32
+		{82C9BD79-9796-405F-8A28-3F538514AC3A}.Debug_novideo_dll|Win32.Build.0 = Debug|Win32
+		{82C9BD79-9796-405F-8A28-3F538514AC3A}.Debug_novideo|Win32.ActiveCfg = Debug|Win32
+		{82C9BD79-9796-405F-8A28-3F538514AC3A}.Debug_novideo|Win32.Build.0 = Debug|Win32
+		{82C9BD79-9796-405F-8A28-3F538514AC3A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{82C9BD79-9796-405F-8A28-3F538514AC3A}.Debug|Win32.Build.0 = Debug|Win32
+		{82C9BD79-9796-405F-8A28-3F538514AC3A}.Release_dll|Win32.ActiveCfg = Release|Win32
+		{82C9BD79-9796-405F-8A28-3F538514AC3A}.Release_dll|Win32.Build.0 = Release|Win32
+		{82C9BD79-9796-405F-8A28-3F538514AC3A}.Release_novideo_dll|Win32.ActiveCfg = Release|Win32
+		{82C9BD79-9796-405F-8A28-3F538514AC3A}.Release_novideo_dll|Win32.Build.0 = Release|Win32
+		{82C9BD79-9796-405F-8A28-3F538514AC3A}.Release_novideo|Win32.ActiveCfg = Release|Win32
+		{82C9BD79-9796-405F-8A28-3F538514AC3A}.Release_novideo|Win32.Build.0 = Release|Win32
+		{82C9BD79-9796-405F-8A28-3F538514AC3A}.Release|Win32.ActiveCfg = Release|Win32
+		{82C9BD79-9796-405F-8A28-3F538514AC3A}.Release|Win32.Build.0 = Release|Win32
+		{2F463562-375D-481E-A6E0-7C7D0DC1ED7A}.Debug_dll|Win32.ActiveCfg = Debug|Win32
+		{2F463562-375D-481E-A6E0-7C7D0DC1ED7A}.Debug_dll|Win32.Build.0 = Debug|Win32
+		{2F463562-375D-481E-A6E0-7C7D0DC1ED7A}.Debug_novideo_dll|Win32.ActiveCfg = Debug|Win32
+		{2F463562-375D-481E-A6E0-7C7D0DC1ED7A}.Debug_novideo|Win32.ActiveCfg = Debug|Win32
+		{2F463562-375D-481E-A6E0-7C7D0DC1ED7A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2F463562-375D-481E-A6E0-7C7D0DC1ED7A}.Debug|Win32.Build.0 = Debug|Win32
+		{2F463562-375D-481E-A6E0-7C7D0DC1ED7A}.Release_dll|Win32.ActiveCfg = Release|Win32
+		{2F463562-375D-481E-A6E0-7C7D0DC1ED7A}.Release_dll|Win32.Build.0 = Release|Win32
+		{2F463562-375D-481E-A6E0-7C7D0DC1ED7A}.Release_novideo_dll|Win32.ActiveCfg = Release|Win32
+		{2F463562-375D-481E-A6E0-7C7D0DC1ED7A}.Release_novideo|Win32.ActiveCfg = Release|Win32
+		{2F463562-375D-481E-A6E0-7C7D0DC1ED7A}.Release|Win32.ActiveCfg = Release|Win32
+		{2F463562-375D-481E-A6E0-7C7D0DC1ED7A}.Release|Win32.Build.0 = Release|Win32
+		{E972C52F-9E85-4D65-B19C-031E511E9DB4}.Debug_dll|Win32.ActiveCfg = Debug|Win32
+		{E972C52F-9E85-4D65-B19C-031E511E9DB4}.Debug_dll|Win32.Build.0 = Debug|Win32
+		{E972C52F-9E85-4D65-B19C-031E511E9DB4}.Debug_novideo_dll|Win32.ActiveCfg = Debug|Win32
+		{E972C52F-9E85-4D65-B19C-031E511E9DB4}.Debug_novideo_dll|Win32.Build.0 = Debug|Win32
+		{E972C52F-9E85-4D65-B19C-031E511E9DB4}.Debug_novideo|Win32.ActiveCfg = Debug|Win32
+		{E972C52F-9E85-4D65-B19C-031E511E9DB4}.Debug_novideo|Win32.Build.0 = Debug|Win32
+		{E972C52F-9E85-4D65-B19C-031E511E9DB4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E972C52F-9E85-4D65-B19C-031E511E9DB4}.Debug|Win32.Build.0 = Debug|Win32
+		{E972C52F-9E85-4D65-B19C-031E511E9DB4}.Release_dll|Win32.ActiveCfg = Release|Win32
+		{E972C52F-9E85-4D65-B19C-031E511E9DB4}.Release_dll|Win32.Build.0 = Release|Win32
+		{E972C52F-9E85-4D65-B19C-031E511E9DB4}.Release_novideo_dll|Win32.ActiveCfg = Release|Win32
+		{E972C52F-9E85-4D65-B19C-031E511E9DB4}.Release_novideo_dll|Win32.Build.0 = Release|Win32
+		{E972C52F-9E85-4D65-B19C-031E511E9DB4}.Release_novideo|Win32.ActiveCfg = Release|Win32
+		{E972C52F-9E85-4D65-B19C-031E511E9DB4}.Release_novideo|Win32.Build.0 = Release|Win32
+		{E972C52F-9E85-4D65-B19C-031E511E9DB4}.Release|Win32.ActiveCfg = Release|Win32
+		{E972C52F-9E85-4D65-B19C-031E511E9DB4}.Release|Win32.Build.0 = Release|Win32
+		{E2C6AD95-7A61-41FE-8754-A4623C891BF8}.Debug_dll|Win32.ActiveCfg = Debug|Win32
+		{E2C6AD95-7A61-41FE-8754-A4623C891BF8}.Debug_dll|Win32.Build.0 = Debug|Win32
+		{E2C6AD95-7A61-41FE-8754-A4623C891BF8}.Debug_novideo_dll|Win32.ActiveCfg = Debug|Win32
+		{E2C6AD95-7A61-41FE-8754-A4623C891BF8}.Debug_novideo|Win32.ActiveCfg = Debug|Win32
+		{E2C6AD95-7A61-41FE-8754-A4623C891BF8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E2C6AD95-7A61-41FE-8754-A4623C891BF8}.Debug|Win32.Build.0 = Debug|Win32
+		{E2C6AD95-7A61-41FE-8754-A4623C891BF8}.Release_dll|Win32.ActiveCfg = Release|Win32
+		{E2C6AD95-7A61-41FE-8754-A4623C891BF8}.Release_dll|Win32.Build.0 = Release|Win32
+		{E2C6AD95-7A61-41FE-8754-A4623C891BF8}.Release_novideo_dll|Win32.ActiveCfg = Release|Win32
+		{E2C6AD95-7A61-41FE-8754-A4623C891BF8}.Release_novideo|Win32.ActiveCfg = Release|Win32
+		{E2C6AD95-7A61-41FE-8754-A4623C891BF8}.Release|Win32.ActiveCfg = Release|Win32
+		{E2C6AD95-7A61-41FE-8754-A4623C891BF8}.Release|Win32.Build.0 = Release|Win32
+		{6F5AEE93-BA87-465B-BC75-C41C434FC4E4}.Debug_dll|Win32.ActiveCfg = Debug_dll|Win32
+		{6F5AEE93-BA87-465B-BC75-C41C434FC4E4}.Debug_dll|Win32.Build.0 = Debug_dll|Win32
+		{6F5AEE93-BA87-465B-BC75-C41C434FC4E4}.Debug_novideo_dll|Win32.ActiveCfg = Debug_novideo_dll|Win32
+		{6F5AEE93-BA87-465B-BC75-C41C434FC4E4}.Debug_novideo_dll|Win32.Build.0 = Debug_novideo_dll|Win32
+		{6F5AEE93-BA87-465B-BC75-C41C434FC4E4}.Debug_novideo|Win32.ActiveCfg = Debug_novideo|Win32
+		{6F5AEE93-BA87-465B-BC75-C41C434FC4E4}.Debug_novideo|Win32.Build.0 = Debug_novideo|Win32
+		{6F5AEE93-BA87-465B-BC75-C41C434FC4E4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6F5AEE93-BA87-465B-BC75-C41C434FC4E4}.Debug|Win32.Build.0 = Debug|Win32
+		{6F5AEE93-BA87-465B-BC75-C41C434FC4E4}.Release_dll|Win32.ActiveCfg = Release_dll|Win32
+		{6F5AEE93-BA87-465B-BC75-C41C434FC4E4}.Release_dll|Win32.Build.0 = Release_dll|Win32
+		{6F5AEE93-BA87-465B-BC75-C41C434FC4E4}.Release_novideo_dll|Win32.ActiveCfg = Release_novideo_dll|Win32
+		{6F5AEE93-BA87-465B-BC75-C41C434FC4E4}.Release_novideo_dll|Win32.Build.0 = Release_novideo_dll|Win32
+		{6F5AEE93-BA87-465B-BC75-C41C434FC4E4}.Release_novideo|Win32.ActiveCfg = Release_novideo|Win32
+		{6F5AEE93-BA87-465B-BC75-C41C434FC4E4}.Release_novideo|Win32.Build.0 = Release_novideo|Win32
+		{6F5AEE93-BA87-465B-BC75-C41C434FC4E4}.Release|Win32.ActiveCfg = Release|Win32
+		{6F5AEE93-BA87-465B-BC75-C41C434FC4E4}.Release|Win32.Build.0 = Release|Win32
+		{B5F8E725-85A8-4CB1-8824-B82127BB2B1E}.Debug_dll|Win32.ActiveCfg = Debug_dll|Win32
+		{B5F8E725-85A8-4CB1-8824-B82127BB2B1E}.Debug_dll|Win32.Build.0 = Debug_dll|Win32
+		{B5F8E725-85A8-4CB1-8824-B82127BB2B1E}.Debug_novideo_dll|Win32.ActiveCfg = Debug|Win32
+		{B5F8E725-85A8-4CB1-8824-B82127BB2B1E}.Debug_novideo|Win32.ActiveCfg = Debug|Win32
+		{B5F8E725-85A8-4CB1-8824-B82127BB2B1E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B5F8E725-85A8-4CB1-8824-B82127BB2B1E}.Debug|Win32.Build.0 = Debug|Win32
+		{B5F8E725-85A8-4CB1-8824-B82127BB2B1E}.Release_dll|Win32.ActiveCfg = Release_dll|Win32
+		{B5F8E725-85A8-4CB1-8824-B82127BB2B1E}.Release_dll|Win32.Build.0 = Release_dll|Win32
+		{B5F8E725-85A8-4CB1-8824-B82127BB2B1E}.Release_novideo_dll|Win32.ActiveCfg = Release|Win32
+		{B5F8E725-85A8-4CB1-8824-B82127BB2B1E}.Release_novideo|Win32.ActiveCfg = Release|Win32
+		{B5F8E725-85A8-4CB1-8824-B82127BB2B1E}.Release|Win32.ActiveCfg = Release|Win32
+		{B5F8E725-85A8-4CB1-8824-B82127BB2B1E}.Release|Win32.Build.0 = Release|Win32
+		{F5166D99-32BB-40D5-BE95-6F97F72C44CE}.Debug_dll|Win32.ActiveCfg = Debug|Win32
+		{F5166D99-32BB-40D5-BE95-6F97F72C44CE}.Debug_dll|Win32.Build.0 = Debug|Win32
+		{F5166D99-32BB-40D5-BE95-6F97F72C44CE}.Debug_novideo_dll|Win32.ActiveCfg = Debug|Win32
+		{F5166D99-32BB-40D5-BE95-6F97F72C44CE}.Debug_novideo|Win32.ActiveCfg = Debug|Win32
+		{F5166D99-32BB-40D5-BE95-6F97F72C44CE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F5166D99-32BB-40D5-BE95-6F97F72C44CE}.Debug|Win32.Build.0 = Debug|Win32
+		{F5166D99-32BB-40D5-BE95-6F97F72C44CE}.Release_dll|Win32.ActiveCfg = Release|Win32
+		{F5166D99-32BB-40D5-BE95-6F97F72C44CE}.Release_dll|Win32.Build.0 = Release|Win32
+		{F5166D99-32BB-40D5-BE95-6F97F72C44CE}.Release_novideo_dll|Win32.ActiveCfg = Release|Win32
+		{F5166D99-32BB-40D5-BE95-6F97F72C44CE}.Release_novideo|Win32.ActiveCfg = Release|Win32
+		{F5166D99-32BB-40D5-BE95-6F97F72C44CE}.Release|Win32.ActiveCfg = Release|Win32
+		{F5166D99-32BB-40D5-BE95-6F97F72C44CE}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

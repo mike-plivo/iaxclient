@@ -1,0 +1,43 @@
+D/.deps////
+D/portmixer////
+D/sox////
+D/libiax2////
+D/spandsp////
+D/wince////
+D/iLBC////
+D/gsm////
+/Makefile/1.1/Tue Jun  9 08:05:50 2009//
+/Makefile.am/1.1/Tue Jun  9 08:05:51 2009//
+/Makefile.in/1.1/Tue Jun  9 08:05:51 2009//
+/audio_alsa.c/1.1/Tue Jun  9 08:05:51 2009//
+/audio_alsa.h/1.1/Tue Jun  9 08:05:51 2009//
+/audio_encode.c/1.1/Tue Jun  9 08:05:51 2009//
+/audio_encode.h/1.1/Tue Jun  9 08:05:51 2009//
+/audio_portaudio.h/1.1/Tue Jun  9 08:05:51 2009//
+/codec_alaw.c/1.1/Tue Jun  9 08:05:51 2009//
+/codec_alaw.h/1.1/Tue Jun  9 08:05:50 2009//
+/codec_ffmpeg.c/1.1/Tue Jun  9 08:05:51 2009//
+/codec_ffmpeg.h/1.1/Tue Jun  9 08:05:51 2009//
+/codec_gsm.c/1.1/Tue Jun  9 08:05:50 2009//
+/codec_gsm.h/1.1/Tue Jun  9 08:05:50 2009//
+/codec_ilbc.c/1.1/Tue Jun  9 08:05:51 2009//
+/codec_ilbc.h/1.1/Tue Jun  9 08:05:51 2009//
+/codec_speex.c/1.1/Tue Jun  9 08:05:51 2009//
+/codec_speex.h/1.1/Tue Jun  9 08:05:50 2009//
+/codec_theora.c/1.1/Tue Jun  9 08:05:51 2009//
+/codec_theora.h/1.1/Tue Jun  9 08:05:50 2009//
+/codec_ulaw.c/1.1/Tue Jun  9 08:05:51 2009//
+/codec_ulaw.h/1.1/Tue Jun  9 08:05:51 2009//
+/iaxclient.h/1.1/Tue Jun  9 08:05:51 2009//
+/iaxclient_lib.c/1.1/Tue Jun  9 08:05:50 2009//
+/iaxclient_lib.h/1.1/Tue Jun  9 08:05:50 2009//
+/ringbuffer.c/1.1/Tue Jun  9 08:05:51 2009//
+/ringbuffer.h/1.1/Tue Jun  9 08:05:50 2009//
+/slice.c/1.1/Tue Jun  9 08:05:51 2009//
+/slice.h/1.1/Tue Jun  9 08:05:51 2009//
+/sound2c.pl/1.1/Tue Jun  9 08:05:51 2009//
+/unixfuncs.c/1.1/Tue Jun  9 08:05:51 2009//
+/video.c/1.1/Tue Jun  9 08:05:51 2009//
+/video.h/1.1/Tue Jun  9 08:05:51 2009//
+/winfuncs.c/1.1/Tue Jun  9 08:05:51 2009//
+/audio_portaudio.c/1.2/Tue Jun 23 16:45:58 2009//

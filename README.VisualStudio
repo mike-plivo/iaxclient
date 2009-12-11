@@ -1,0 +1,91 @@
+These are instructions to build iaxclient with Microsoft Visual Studio
+2005. A reference solution file and project files are located in the
+contrib/win/vs2005 directory.
+
+Steps demarked with (*) are only required if building with video
+support.
+
+ 1*) Set the DXSDK_DIR environment variable.
+ 
+     Use the "System" properties dialog in the Windows Control Panel to
+     set this variable either for the user or system-wide. The value is
+     the path to the DirectX SDK. The June 2007, August 2007, and
+     December 2006 versions of the DirectX SDK are known to work.
+
+ 2*) Install the Microsoft Windows Software Development Kit.
+ 
+     Version 6.0 is known to work. After installing the Windows SDK, run
+     the program "Start -> Microsoft Windows SDK -> Visual Studio
+     Registration -> Integrate Windows SDK with Visual Studio". This
+     registers include and library paths with Visual Studio.
+     
+     See here for the Windows SDK:
+
+      http://www.microsoft.com/downloads/details.aspx?familyid=4377F86D-C913-4B5C-B87E-EF72E5B4E065
+
+ 3) Obtain dependencies.
+ 
+ 3a) At the time of this writing, portaudio-v19 and speex-1.2beta3 are
+     required for all configurations. Sources may be found here:
+    
+      http://portaudio.com/archives/pa_snapshot_v19.tar.gz
+      http://downloads.xiph.org/releases/speex/speex-1.2beta3.tar.gz
+
+ 3b*) For video support, libogg-1.1.3, libtheora-1.0beta2, and
+      libvidcap-0.2.1 are also required. Source for these dependencies
+      are available here:
+
+      http://downloads.xiph.org/releases/ogg/libogg-1.1.3.tar.gz
+      http://downloads.xiph.org/releases/theora/libtheora-1.0beta2.tar.gz
+      http://downloads.sourceforge.net/libvidcap/libvidcap-0.2.1.tar.gz
+
+ 3c*) Additionally, to build vtestcall, SDL is required. A prebuilt
+      binary development package is available here:
+
+      http://www.libsdl.org/release/SDL-devel-1.2.13-VC8.zip
+
+ 4) Rename/move directories.
+
+    In order to build with the vcproj files provided by iaxclient, these
+    dependent libraries must be moved to be peer directories to the
+    iaxclient source directory. They also must have the following names:
+    portaudio, speex, libogg, libtheora, libvidcap, and SDL. So the
+    final directory layout must look like this:
+
+      C:\...\whereever\iaxclient
+      C:\...\whereever\portaudio
+      C:\...\whereever\speex
+      C:\...\whereever\libogg
+      C:\...\whereever\libtheora
+      C:\...\whereever\libvidcap
+      C:\...\whereever\SDL
+
+ 5) Open the solution file.
+ 
+    Using Visual Studio 2005, open contrib/win/vs2005/iaxclient.sln.
+
+ 6) Choose configuration.
+
+    There are four options:
+
+      Release         -- optimized static library
+      Release_dll     -- optimized dynamic link library
+      Release_novideo -- optimized static library without video support
+      Debug           -- debug static library
+      Debug_dll       -- debug dynamic link library
+      Debug_novideo   -- debug static library without video support
+
+ 6) Build the solution.
+ 
+    This will build iaxclient and all its dependent libraries. All
+    dependent libraries are linked into the final library. The final
+    libiaxclient library can be found here (depending on the
+    configuration chosen):
+
+      Release\libiaxclient\libiaxclient.lib
+      Release_dll\libiaxclient\libiaxclient.dll
+      Release_novideo\libiaxclient\libiaxclient.lib
+      Debug\libiaxclient\libiaxclient.lib
+      Debug_dll\libiaxclient\libiaxclient.dll
+      Debug_novideo\libiaxclient\libiaxclient.lib
+

@@ -1,0 +1,147 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "libgsm"=.\libgsm.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    Perforce Project
+    .
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "libiax2"=.\libiax2.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    libiax2
+    ..\..\..\..
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "libiaxclient"=.\libiaxclient.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    Perforce Project
+    .
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name libgsm
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name libiax2
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name libogg
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name libportaudio
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name libportmixer
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name libspeex
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "libogg"=.\libogg.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    libogg
+    ..\..\..\..\..
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "libportaudio"=.\libportaudio.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    libportaudio
+    ..\..\..\..\..
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "libportmixer"=.\libportmixer.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    libportmixer
+    ..\..\..\..
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "libspeex"=.\libspeex.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    libspeex
+    ..\..\..\..\..
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

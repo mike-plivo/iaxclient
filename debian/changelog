@@ -1,0 +1,18 @@
+iaxclient (2.1beta3-sarge3) lenny; urgency=low
+
+  * Iaxclient lib. 
+  * Add mute outgoing/incoming.
+
+ -- Michael Ricordeau <michael.ricordeau@gmail.com>  Fri, 11 Dec 2009 11:23:03 +0100
+
+iaxclient (2.1beta3-sarge2) lenny; urgency=low
+
+  * Iaxclient lib
+
+ -- Michael Ricordeau <michael.ricordeau@gmail.com>  Tue, 23 Jun 2009 18:56:56 +0200
+
+iaxclient (2.1beta3-sarge1) lenny; urgency=low
+
+  * Iaxclient lib 
+
+ -- Michael Ricordeau <michael.ricordeau@gmail.com>  Thu,  2 Apr 2009 17:10:43 +0000

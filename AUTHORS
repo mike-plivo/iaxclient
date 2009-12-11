@@ -1,0 +1,16 @@
+Steve Kann <stevek@stevek.com>
+Shawn Lawrence <shawn.lawrence@terracecomm.com>
+Faizan "Tili" Naqvi <faizan@tilizone.com> [Win32 VC++ build/client]
+Scott Lambert <lambert@lambertfam.org> [FreeBSD build changes]
+Michael Van Donselaar <mvand@vandonselaar.org> [Win32/MinGW build directions, UI changes, IAXComm phone ]
+Steven Sokol <ssokol@sokol-associates.com> [ Debugging, Blind Transfer ]
+Stephan Kauss <Stephan@kauss.org> [ 32-bit alignment for IAX2 ]
+Stephen Uhler <suhler@sun.com> [Solaris build, tkiaxphone]
+Steve Underwood <steveu@coppice.org> [PLC implementation from spandsp]
+Jean-Denis Girard <jd.girard@sysnux.pf> [URL Receive implementation]
+Panfilov Dmitry <dima@bdpu.org> [Basic ALSA-native audio driver]
+Erik Bunce <kde@bunce.us> [Assorted fixes/tweaks/features, Documentation]
+Mihai Balea <mihai at hates dot ms>
+Bill Welch <welch1820 at gmail dot com> [Project files for several MS development environments]
+Peter Grayson <jpgrayson@gmail.com>
+Bill Cholewka <bcholew@gmail.com>

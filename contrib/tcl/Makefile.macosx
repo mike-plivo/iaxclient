@@ -1,0 +1,123 @@
+CC=gcc
+
+#../lib is where libiaxclient code is located
+CFLAGS= -I. -I../../lib -I../../lib/gsm/inc -I../../lib/libiax2/src \
+	-I../../lib/portaudio/pa_common -I../../lib/portaudio/pablio -I../../lib/portmixer/px_common \
+	-I../../lib/libspeex/include --std=c99
+
+#CFLAGS:= $(CFLAGS) -g -Wall -Wpointer-arith
+CFLAGS:= $(CFLAGS) -g -Wall -O2
+
+# debug flags
+# CFLAGS := $(CFLAGS) -DDEBUG_SUPPORT -DDEBUG_DEFAULT -DEXTREME_DEBUG -D_DEBUG
+# CFLAGS := $(CFLAGS) -DDEBUG_SUPPORT -DDEBUG_DEFAULT -D_DEBUG
+
+OBJS=\
+	iaxclient.o\
+	XThreadUtil.o\
+	tones.o
+
+LIB=iaxclient.a
+
+RANLIB= echo
+
+all: $(LIB)
+
+# glean the platform
+# We will define this as either Linux, Win32, SOLARIS, or MacOSX
+ifneq (,$(findstring Linux,$(shell uname)))
+OSTYPE=LINUX
+else
+ifneq (,$(findstring Darwin,$(shell uname)))
+OSTYPE=MACOSX
+else
+# CYGWIN reports CYGWIN_NT-5.0 under Win2K
+ifneq (,$(findstring WIN,$(shell uname)))
+OSTYPE=WIN32
+else
+ifneq (,$(findstring MINGW,$(shell uname)))
+OSTYPE=WIN32
+else
+ifneq (,$(findstring SunOS,$(shell uname)))
+OSTYPE=SOLARIS
+else
+$(warning OSTYPE cannot be detected, assuming Linux)
+OSTYPE=LINUX
+endif
+endif
+endif
+endif
+endif
+
+# Setup platform-specific stuff based on gleaning
+ifeq ($(OSTYPE),WIN32)
+OBJS:= $(OBJS) $(OBJS_WIN32)
+CFLAGS:= -mno-cygwin $(CFLAGS)
+DYNLDFLAGS= -mno-cygwin -lwinmm -lwsock32 -lcomdlg32 -luser32 -lgdi32 -lole32 -lcomctl32 -lctl3d32 \
+		-lgcc -lstdc++ -lshell32 -loleaut32 -ladvapi32 -luuid -Wl,--out-implib,iaxclient.a
+DYNCFLAGS=-DBUILDING_DLL
+DYNLIB=iaxclient.dll
+endif
+
+ifeq ($(OSTYPE),LINUX)
+OBJS:= $(OBJS) 
+DYNCFLAGS=-fPIC
+DYNLIB=iaxclient.so
+endif
+
+ifeq ($(OSTYPE),SOLARIS)
+OBJS:= $(OBJS)
+CFLAGS:= $(CFLAGS) -DALIGN32
+DYNCFLAGS=-fPIC
+DYNLIB=iaxclient.so
+CC=gcc
+endif
+
+ifeq ($(OSTYPE),MACOSX)
+OBJS:= $(OBJS)
+RANLIB= ranlib
+DYNLIB=iaxclient.dylib
+endif
+
+CFLAGS:= $(CFLAGS) -D$(OSTYPE)
+
+$(LIB): $(OBJS)
+	rm -f $(LIB)
+	ar cru $(LIB) $(OBJS)
+	$(RANLIB) $(LIB)
+
+MSLIB=iaxclient.lib
+MGLIBDIR=c:/mingw/lib
+GCCLIBDIR=$(MGLIBDIR)/gcc-lib/mingw32/3.2/
+
+GCCLIB=$(GCCLIBDIR)/libgcc.a
+
+CXXFLAGS=$(CFLAGS)
+
+$(MSLIB): $(OBJS)
+#       rm -f $(MSLIB)
+	cp $(GCCLIB) $(MSLIB)
+	ar rs $(MSLIB) $(OBJS)
+
+
+shared: CFLAGS := $(CFLAGS) $(DYNCFLAGS)
+#shared: clean iaxclient.a
+shared: iaxclient.a
+ifeq ($(OSTYPE),MACOSX)
+	libtool -single_module -dynamic -o iaxclient.dylib iaxclient.a   \
+	-l../../lib/libiaxclient.a -llibtclstub.8.4.a -lc   \
+	-framework CoreAudio -framework AudioToolbox -framework Tcl -lcc_dynamic
+else
+	$(CC) -shared -o $(DYNLIB)    \
+	-l../../lib/libiaxclient.a -llibtclstub.8.4.a  \
+	$(OBJS) $(DYNLDFLAGS)
+endif
+
+plat:
+	echo Platform is $(OSTYPE)
+	echo OBJS are $(OBJS)
+	echo OBJS_LINUX are $(OBJS_LINUX)
+
+clean:
+	rm -f $(OBJS) $(LIB)
+

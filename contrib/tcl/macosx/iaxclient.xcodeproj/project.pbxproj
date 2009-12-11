@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4918F53F0D87C39A0075503C /* iaxclient.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AF53C360952FCFB00A80065 /* iaxclient.c */; };
+		4918F5400D87C39A0075503C /* tones.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A5373C809559D2400A80065 /* tones.c */; };
+		4918F5410D87C39A0075503C /* XThreadUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A8A09570987AFF400A80065 /* XThreadUtil.c */; };
+		4918F5450D87C39A0075503C /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5373CF0955A06700A80065 /* CoreAudio.framework */; };
+		4918F5460D87C39A0075503C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5373D10955A08400A80065 /* AudioToolbox.framework */; };
+		4918F5470D87C39A0075503C /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A665C310AE8F711002F6F7B /* AudioUnit.framework */; };
+		4918F5480D87C39A0075503C /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A665C340AE8F73C002F6F7B /* CoreServices.framework */; };
+		4918F5500D87C4250075503C /* libtclstub8.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4918F54F0D87C4250075503C /* libtclstub8.5.a */; };
+		4932DB150D8A616B006222BE /* libiaxclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4932DB140D8A616B006222BE /* libiaxclient.a */; };
+		49DA5E5A0D89616E00865CDD /* libportaudio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49DA5E590D89616E00865CDD /* libportaudio.a */; };
+		49DA5E5D0D89619D00865CDD /* libspeex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49DA5E5C0D89619D00865CDD /* libspeex.a */; };
+		49DA5E600D8961BD00865CDD /* libspeexdsp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49DA5E5F0D8961BD00865CDD /* libspeexdsp.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4918F54E0D87C39A0075503C /* tcliaxclient0.2.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = tcliaxclient0.2.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		4918F54F0D87C4250075503C /* libtclstub8.5.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtclstub8.5.a; path = /Library/Frameworks/Tcl.framework/libtclstub8.5.a; sourceTree = "<absolute>"; };
+		4932DB140D8A616B006222BE /* libiaxclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiaxclient.a; path = /usr/local/lib/libiaxclient.a; sourceTree = "<absolute>"; };
+		49DA5E590D89616E00865CDD /* libportaudio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libportaudio.a; path = /usr/local/lib/libportaudio.a; sourceTree = "<absolute>"; };
+		49DA5E5C0D89619D00865CDD /* libspeex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libspeex.a; path = /usr/local/lib/libspeex.a; sourceTree = "<absolute>"; };
+		49DA5E5F0D8961BD00865CDD /* libspeexdsp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libspeexdsp.a; path = /usr/local/lib/libspeexdsp.a; sourceTree = "<absolute>"; };
+		9A5373C809559D2400A80065 /* tones.c */ = {isa = PBXFileReference; fileEncoding = 30; indentWidth = 4; lastKnownFileType = sourcecode.c.c; name = tones.c; path = ../tones.c; sourceTree = SOURCE_ROOT; tabWidth = 8; usesTabs = 0; };
+		9A5373CF0955A06700A80065 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = /System/Library/Frameworks/CoreAudio.framework; sourceTree = "<absolute>"; };
+		9A5373D10955A08400A80065 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
+		9A665C310AE8F711002F6F7B /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = /System/Library/Frameworks/AudioUnit.framework; sourceTree = "<absolute>"; };
+		9A665C340AE8F73C002F6F7B /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
+		9A8A09570987AFF400A80065 /* XThreadUtil.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = XThreadUtil.c; path = ../XThreadUtil.c; sourceTree = SOURCE_ROOT; };
+		9AF53C2F0952FBDE00A80065 /* pkgIndex.tcl */ = {isa = PBXFileReference; lastKnownFileType = text; name = pkgIndex.tcl; path = ../pkgIndex.tcl; sourceTree = SOURCE_ROOT; };
+		9AF53C360952FCFB00A80065 /* iaxclient.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = iaxclient.c; path = ../iaxclient.c; sourceTree = SOURCE_ROOT; };
+		F94429230420B8C2006F146B /* Tcl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Tcl.framework; path = /Library/Frameworks/Tcl.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4918F5420D87C39A0075503C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4918F5450D87C39A0075503C /* CoreAudio.framework in Frameworks */,
+				4918F5460D87C39A0075503C /* AudioToolbox.framework in Frameworks */,
+				4918F5470D87C39A0075503C /* AudioUnit.framework in Frameworks */,
+				4918F5480D87C39A0075503C /* CoreServices.framework in Frameworks */,
+				4918F5500D87C4250075503C /* libtclstub8.5.a in Frameworks */,
+				49DA5E5A0D89616E00865CDD /* libportaudio.a in Frameworks */,
+				49DA5E5D0D89619D00865CDD /* libspeex.a in Frameworks */,
+				49DA5E600D8961BD00865CDD /* libspeexdsp.a in Frameworks */,
+				4932DB150D8A616B006222BE /* libiaxclient.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DDFF38A45A11DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4918F54E0D87C39A0075503C /* tcliaxclient0.2.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 = {
+			isa = PBXGroup;
+			children = (
+				08FB77ACFE841707C02AAC07 /* Source */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DDFF38A45A11DB9C8B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				4932DB140D8A616B006222BE /* libiaxclient.a */,
+				49DA5E5F0D8961BD00865CDD /* libspeexdsp.a */,
+				49DA5E5C0D89619D00865CDD /* libspeex.a */,
+				49DA5E590D89616E00865CDD /* libportaudio.a */,
+				F94429230420B8C2006F146B /* Tcl.framework */,
+				4918F54F0D87C4250075503C /* libtclstub8.5.a */,
+				9A665C310AE8F711002F6F7B /* AudioUnit.framework */,
+				9A665C340AE8F73C002F6F7B /* CoreServices.framework */,
+				9A5373CF0955A06700A80065 /* CoreAudio.framework */,
+				9A5373D10955A08400A80065 /* AudioToolbox.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9AF53C2F0952FBDE00A80065 /* pkgIndex.tcl */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77ACFE841707C02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9AF53C360952FCFB00A80065 /* iaxclient.c */,
+				9A5373C809559D2400A80065 /* tones.c */,
+				9A8A09570987AFF400A80065 /* XThreadUtil.c */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4918F53C0D87C39A0075503C /* iaxclient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4918F54A0D87C39A0075503C /* Build configuration list for PBXNativeTarget "iaxclient" */;
+			buildPhases = (
+				4918F53D0D87C39A0075503C /* ShellScript */,
+				4918F53E0D87C39A0075503C /* Sources */,
+				4918F5420D87C39A0075503C /* Frameworks */,
+				4918F5490D87C39A0075503C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iaxclient;
+			productInstallPath = "/Library/Tcl/iaxclient${DYLIB_COMPATIBILITY_VERSION}";
+			productName = "TclSpeech dylib";
+			productReference = 4918F54E0D87C39A0075503C /* tcliaxclient0.2.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 4918F5350D87C3710075503C /* Build configuration list for PBXProject "iaxclient" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07;
+			productRefGroup = 034768DDFF38A45A11DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4918F53C0D87C39A0075503C /* iaxclient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4918F53D0D87C39A0075503C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# ensure we can overwrite a previous install\nif [ -d \"${INSTALL_ROOT}${INSTALL_PATH}\" ]; then\n    chmod -RH u+w \"${INSTALL_ROOT}${INSTALL_PATH}\"\nfi";
+		};
+		4918F5490D87C39A0075503C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4918F53E0D87C39A0075503C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4918F53F0D87C39A0075503C /* iaxclient.c in Sources */,
+				4918F5400D87C39A0075503C /* tones.c in Sources */,
+				4918F5410D87C39A0075503C /* XThreadUtil.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4918F52F0D87C3700075503C /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Development;
+		};
+		4918F5300D87C3700075503C /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Deployment;
+		};
+		4918F5310D87C3700075503C /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+		4918F54B0D87C39A0075503C /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 0.2;
+				DYLIB_CURRENT_VERSION = 0.2;
+				DYLIB_INSTALLED_NAME = "tcliaxclient${DYLIB_COMPATIBILITY_VERSION}.dylib";
+				EXPORTED_SYMBOLS_FILE = ./PBExportedSymbols;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = ../Prefixes.h;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					USE_TCL_STUBS,
+					"TARGET_OS_MAC=1",
+					"TARGET_API_MAC_CARBON=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					../../../lib,
+					../../../lib/libiax2/src,
+					../../../lib/gsm/inc,
+				);
+				INSTALL_PATH = "/Library/Tcl/iaxclient${DYLIB_COMPATIBILITY_VERSION}";
+				LIBRARY_SEARCH_PATHS = /Library/Frameworks/Tcl.framework;
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				OTHER_CFLAGS = "--std=c99";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "tcliaxclient${DYLIB_COMPATIBILITY_VERSION}";
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				TEMP_DIR = "${OBJROOT}/Development.build/$(PROJECT_NAME).build/$(TARGET_NAME).build";
+				UNSTRIPPED_PRODUCT = YES;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		4918F54C0D87C39A0075503C /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 0.2;
+				DYLIB_CURRENT_VERSION = 0.2;
+				DYLIB_INSTALLED_NAME = "tcliaxclient${DYLIB_COMPATIBILITY_VERSION}.dylib";
+				EXPORTED_SYMBOLS_FILE = ./PBExportedSymbols;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREFIX_HEADER = ../Prefixes.h;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					USE_TCL_STUBS,
+					"TARGET_OS_MAC=1",
+					"TARGET_API_MAC_CARBON=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					../../../lib,
+					../../../lib/libiax2/src,
+					../../../lib/gsm/inc,
+				);
+				INSTALL_PATH = "/Library/Tcl/iaxclient${DYLIB_COMPATIBILITY_VERSION}";
+				LIBRARY_SEARCH_PATHS = (
+					/Library/Frameworks/Tcl.framework,
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../../../lib/.libs\"";
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				OTHER_CFLAGS = "--std=c99";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "tcliaxclient${DYLIB_COMPATIBILITY_VERSION}";
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				TEMP_DIR = "${OBJROOT}/Deployment.build/$(PROJECT_NAME).build/$(TARGET_NAME).build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		4918F54D0D87C39A0075503C /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 0.2;
+				DYLIB_CURRENT_VERSION = 0.2;
+				DYLIB_INSTALLED_NAME = "tcliaxclient${DYLIB_COMPATIBILITY_VERSION}.dylib";
+				EXPORTED_SYMBOLS_FILE = ./PBExportedSymbols;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = ../Prefixes.h;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					USE_TCL_STUBS,
+					"TARGET_OS_MAC=1",
+					"TARGET_API_MAC_CARBON=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					../../../lib,
+					../../../lib/libiax2/src,
+					../../../lib/gsm/inc,
+				);
+				INSTALL_PATH = "/Library/Tcl/iaxclient${DYLIB_COMPATIBILITY_VERSION}";
+				LIBRARY_SEARCH_PATHS = (
+					/Library/Frameworks/Tcl.framework,
+					../../../lib,
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../../../lib/.libs\"";
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				OTHER_CFLAGS = "--std=c99";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "tcliaxclient${DYLIB_COMPATIBILITY_VERSION}";
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4918F5350D87C3710075503C /* Build configuration list for PBXProject "iaxclient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4918F52F0D87C3700075503C /* Development */,
+				4918F5300D87C3700075503C /* Deployment */,
+				4918F5310D87C3700075503C /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		4918F54A0D87C39A0075503C /* Build configuration list for PBXNativeTarget "iaxclient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4918F54B0D87C39A0075503C /* Development */,
+				4918F54C0D87C39A0075503C /* Deployment */,
+				4918F54D0D87C39A0075503C /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
